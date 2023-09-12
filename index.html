@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya&family=Alegreya+Sans+SC:wght@100;400&family=Arsenal&family=Barlow:wght@100&family=Bebas+Neue&family=Black+Ops+One&family=Bruno+Ace&family=Bruno+Ace+SC&family=Caprasimo&family=Carter+One&family=Castoro+Titling&family=Chango&family=Concert+One&family=Dancing+Script&family=Geologica&family=Great+Vibes&family=Gruppo&family=Kalam:wght@300&family=Kanit:wght@300&family=Kaushan+Script&family=Lobster&family=Martel:wght@200&family=Merienda&family=Montserrat+Alternates:wght@100&family=Montserrat:ital,wght@0,100;1,100&family=Mulish:wght@200&family=Noto+Sans:ital,wght@1,500&family=Noto+Serif&family=Nunito:wght@200&family=Open+Sans:wght@300;600&family=Orbitron&family=Oswald:wght@200&family=Pacifico&family=Pathway+Extreme:wght@100&family=Paytone+One&family=Poltawski+Nowy&family=Poppins:wght@300&family=Prompt&family=Quicksand:wght@300&family=Raleway:wght@100&family=Righteous&family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,100;1,300&family=Rubik+Pixels&family=Russo+One&family=Secular+One&family=Sigmar&family=Sofia+Sans&family=Titillium+Web:wght@200&family=Ubuntu:wght@300&family=Ultra&family=Wix+Madefor+Display&family=Ysabeau+Infant:wght@700&family=Ysabeau+SC:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="script.js"></script>
+        <link rel="icon" href="https://cdn.jim-nielsen.com/ios/512/weather-2019-02-07.png">
+</head>
+
+<body>
+    <!-- heading -->
+    <div class="heading">
+        <h1>Weather App</h1>
+    </div>
+
+    <!-- Image -->
+    <div class="main">
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 mt-5" id="w1">
+               
+               
+                <div class="inp">
+                    <input type="text" placeholder="Search your location" id="inputData">
+                    <button onclick="search()">Search</button>
+                </div>
+                <div>
+                    <h1 id="loc" class="text-center text-light mt-3" >KOCHI</h1>
+                    <h1 id="temp1" class="text-center text-light mt-2">31 °C</h1>
+                    <h1></h1>
+
+             
+                </div>
+                
+                <div class="row mt-5" style="margin-left: 30px; ">
+                   
+                    <!-- humidity -->
+                    <div class="col-4">
+                        <img style="margin-left: 0px; " class="img2" src="https://img.icons8.com/ios/512/moisture.png"
+                            alt=""><br><br>
+                        <p class="text-light" id="humidity1">40%</p>
+                        <p class="text-light">Humidity</p>
+                    </div>
+                    <div class="col-4">
+                        <img style="margin-left: 0px;" class="img2" src="https://img.icons8.com/ios/512/wind--v2.png"
+                            alt=""><br><br>
+                        <p class="text-light" id="wind">2km/hr</p>
+                        <p class="text-light">Wind</p>
+                    </div>
+                    <div class="col-4">
+                        <img style="margin-left: 0px;" class="img2" src="https://img.icons8.com/material-rounded/512/pressure.png"
+                            alt=""><br><br>
+                        <p class="text-light" id="Pressure11">1000</p>
+                        <p class="text-light">Pressure</p>
+                    </div>
+                </div>
+                    <small style="margin-top: 20px; color: white; font-size: 20px; text-align: center; margin-top: 10px; font-family: 'Lilita One', cursive;">
+                        <div style="color: white; text-align: center;" class="date"><span id="todayDate"></span> &nbsp;  <span id="todayMonth"></span> &nbsp; <span id="todayYear"></span></div>
+
+                        <div class="time"><span id="todayHours"></span>:<span id="todayMinutes"></span></div>
+                    </small>
+            
+            </div>
+
+           
+
+
+
+            <div class="col-4"></div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>

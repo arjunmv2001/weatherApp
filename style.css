@@ -1,0 +1,47 @@
+body{
+    background-image: url("Images/bg.gif");
+    background-size: cover;
+    overflow-x: hidden;
+}
+.heading{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Chango', cursive;
+    color: white;
+}
+#w1{
+    width: 400px;
+    /* border: 2px solid black; */
+    height: 550px;
+    margin-left: 53px;
+}
+
+.img2{
+    width: 130px;
+    height: 110px;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+.inp input{
+    width: 280px;
+    height: 0px;
+    margin-top: 20px;
+    border-radius: 42px;
+    padding: 23px;
+    box-shadow: 5px 5px 5px 0px #161639db;
+    border: 1px solid white;
+    border: none;
+    outline: none;
+}
+.inp button{
+    width: 86px;
+    height: 45px;
+    border-radius: 24px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px 0px #161639db;
+    border: 1px solid white;
+}
+.img2{
+width: 50px;
+height: 50px;
+}
